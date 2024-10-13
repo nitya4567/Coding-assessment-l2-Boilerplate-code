@@ -11,12 +11,90 @@
 </head>
 
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <div>Marmeto.</div>
+            </div>
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="bara">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu-items">
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <ul class="menu-icons">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-heart"></i></li>
+                <li><i class="fa-sharp fa-solid fa-cart-shopping"></i></li>
+            </ul>
+   
+            
+        </nav>
+    </header>  
+    
+    <main>
+        <div class="cart-page">
+            <div id="cart-home">
+                <h2>Cart</h2>
+                <p><a href="#">Home</a>
+                    <i class="fa-duotone fa-solid fa-trophy"></i></p>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items">
+                    <table class="cart-table" id="cart-items">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-totals" id="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <div class="totals">
+                        <p>Subtotal:₹  <span id="subtotal">0</span></p>
+                        <p>Total:₹ <span id="total">0</span></p>
+                       <button class="btn" id="checkout-btn">Check Out</button> <a href="#" class="checkout-btn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="footer-item">
+                <h4>High Quality</h4>
+                <p>crafted from top materials</p>
+            </div>
+            <div class="footer-item">
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
+            <div class="footer-item">
+                <h4>Free Shipping</h4>
+                <p>Order over 150 $</p>
+            </div>
+            <div class="footer-item">
+                <h4>24/7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
